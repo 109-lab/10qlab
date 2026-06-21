@@ -322,6 +322,12 @@ a { color: inherit; text-decoration: none; }
 .prog-card p { font-size: .87rem; color: var(--mid); line-height: 2; }
 .prog-date { color: var(--teal) !important; font-size: .85rem !important; }
 .prog-date strong { font-weight: 500; }
+.prog-more {
+  display: block; margin-top: auto; padding-top: 1.2rem;
+  font-size: .82rem; color: var(--teal); font-weight: 500;
+  letter-spacing: .05em;
+}
+a.prog-card { text-decoration: none; cursor: pointer; }
 
 /* ===== INSTRUCTOR ===== */
 .inst-layout {
