@@ -353,16 +353,16 @@ a.prog-card { text-decoration: none; cursor: pointer; }
 }
 .inst-detail-btn {
   display: inline-block; margin-top: 1.5rem;
-  background: var(--teal); color: var(--white);
+  background: var(--white); color: var(--teal);
   font-size: .88rem; font-weight: 500; letter-spacing: .08em;
   padding: .85rem 2.2rem; border-radius: 99px;
-  box-shadow: 0 4px 20px rgba(58,159,212,.3);
-  transition: background .2s, transform .2s, box-shadow .2s;
+  border: 1.5px solid rgba(58,159,212,.25);
+  transition: border-color .2s, transform .2s, box-shadow .2s;
 }
 .inst-detail-btn:hover {
-  background: var(--teal-d);
+  border-color: var(--teal);
   transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(58,159,212,.4);
+  box-shadow: 0 4px 16px rgba(58,159,212,.15);
 }
 .inst-text p {
   font-size: .93rem; color: var(--mid); line-height: 2.1; margin-bottom: 1.3rem;
