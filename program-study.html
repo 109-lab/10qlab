@@ -81,6 +81,29 @@
           </div>
         </section>
 
+        <section class="prog-section">
+          <h2>過去の学習会</h2>
+          <div class="flyer-grid">
+            <div class="flyer-item" onclick="openLightbox(this)">
+              <img src="flyers/flyer-01.jpg" alt="学習会チラシ1" />
+            </div>
+            <div class="flyer-item" onclick="openLightbox(this)">
+              <img src="flyers/flyer-02.jpg" alt="学習会チラシ2" />
+            </div>
+            <div class="flyer-item" onclick="openLightbox(this)">
+              <img src="flyers/flyer-03.jpg" alt="学習会チラシ3" />
+            </div>
+          </div>
+        </section>
+
+        <!-- ライトボックス -->
+        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+          <div class="lightbox-inner">
+            <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+            <img id="lightboxImg" src="" alt="" />
+          </div>
+        </div>
+
         <div class="prog-cta-block">
           <p>参加・お申し込みはお問い合わせからどうぞ。</p>
           <a href="index.html#contact" class="prog-cta-btn">お問い合わせ・申し込み</a>
@@ -97,5 +120,20 @@
     </div>
   </footer>
 
+  <script>
+    function openLightbox(el) {
+      const img = el.querySelector('img');
+      document.getElementById('lightboxImg').src = img.src;
+      document.getElementById('lightbox').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
 </body>
 </html>
