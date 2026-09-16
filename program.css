@@ -126,6 +126,72 @@
   box-shadow: 0 8px 28px rgba(58,159,212,.4);
 }
 
+/* 次回開催案内 */
+.next-session-card {
+  border: 2px solid var(--teal);
+  border-radius: 16px; overflow: hidden;
+  background: var(--white);
+}
+.next-session-header {
+  background: linear-gradient(135deg, var(--teal) 0%, var(--teal-d) 100%);
+  padding: 1.8rem 2rem;
+  text-align: center;
+}
+.next-session-num {
+  display: inline-block; font-size: .78rem; letter-spacing: .12em;
+  color: rgba(255,255,255,.85); margin-bottom: .6rem;
+  background: rgba(255,255,255,.15); padding: .2rem .9rem; border-radius: 99px;
+}
+.next-session-title {
+  font-family: var(--font-serif); font-size: clamp(1.3rem, 3vw, 1.8rem);
+  font-weight: 600; color: var(--white); line-height: 1.4; margin: .4rem 0 .3rem;
+}
+.next-session-sub {
+  font-size: .88rem; color: rgba(255,255,255,.85);
+}
+.next-session-body {
+  padding: 1.8rem 2rem;
+  display: grid; grid-template-columns: 220px 1fr; gap: 2rem;
+  align-items: start;
+}
+.next-session-flyer {
+  border-radius: 10px; overflow: hidden;
+  box-shadow: 0 4px 16px rgba(58,159,212,.15);
+  flex-shrink: 0;
+}
+.next-session-flyer img {
+  width: 100%; display: block;
+}
+.next-session-table {
+  border: 1px solid var(--sky-mid); border-radius: 10px; overflow: hidden;
+  margin-bottom: 1.2rem;
+}
+.next-session-desc p {
+  font-size: .9rem; color: var(--mid); line-height: 2; margin-bottom: .6rem;
+}
+.next-session-speaker {
+  background: var(--sky); border-radius: 12px; padding: 1.2rem 1.5rem;
+  margin-top: 1rem;
+}
+.speaker-label {
+  font-size: .72rem; letter-spacing: .1em; color: var(--teal);
+  background: rgba(58,159,212,.12); padding: .18rem .7rem; border-radius: 99px;
+  border: 1px solid rgba(58,159,212,.25); display: inline-block; margin-bottom: .6rem;
+}
+.speaker-name {
+  font-family: var(--font-serif); font-size: 1.15rem; font-weight: 600;
+  color: var(--ink); margin-bottom: .2rem;
+}
+.speaker-kana { font-size: .78rem; font-weight: 400; color: var(--mid); margin-left: .4rem; }
+.speaker-org { font-size: .8rem; color: var(--teal-d); margin-bottom: .6rem; }
+.speaker-bio { font-size: .85rem; color: var(--mid); line-height: 1.9; }
+.next-session-cta {
+  padding: 1.5rem 2rem;
+  text-align: center;
+  border-top: 1px solid var(--sky-mid);
+  background: var(--sky);
+}
+
 /* ギャラリー */
 .flyer-grid {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
@@ -173,4 +239,6 @@
   .prog-content { padding: 3rem 1.5rem 4rem; }
   .prog-row { grid-template-columns: 100px 1fr; }
   .flyer-grid { grid-template-columns: repeat(2, 1fr); }
+  .next-session-body { grid-template-columns: 1fr; }
+  .next-session-flyer { max-width: 260px; margin: 0 auto; }
 }
