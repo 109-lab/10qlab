@@ -178,7 +178,7 @@
       function update() {
         const visible = getVisible();
         const itemWidth = 100 / visible;
-        items.forEach(item => item.style.minWidth = itemWidth + '%');
+        items.forEach(item => { item.style.flex = `0 0 ${itemWidth}%`; });
         track.style.transform = `translateX(-${current * itemWidth}%)`;
         prevBtn.disabled = current === 0;
         nextBtn.disabled = current >= maxIndex();
