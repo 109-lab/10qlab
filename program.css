@@ -126,6 +126,44 @@
   box-shadow: 0 8px 28px rgba(58,159,212,.4);
 }
 
+/* 参加者の声 */
+.voice-card {
+  border: 1.5px solid var(--sky-mid); border-radius: 16px; overflow: hidden;
+}
+.voice-header {
+  background: linear-gradient(135deg, var(--sky) 0%, #ddf0f8 100%);
+  padding: 1.2rem 1.5rem; border-bottom: 1px solid var(--sky-mid);
+}
+.voice-theme {
+  font-size: .72rem; letter-spacing: .1em; color: var(--teal);
+  background: rgba(58,159,212,.12); padding: .18rem .7rem; border-radius: 99px;
+  border: 1px solid rgba(58,159,212,.25); display: inline-block; margin-bottom: .5rem;
+}
+.voice-theme-text {
+  font-family: var(--font-serif); font-size: 1.05rem; font-weight: 600;
+  color: var(--ink); line-height: 1.5; margin: 0;
+}
+.voice-body {
+  padding: 1.4rem 1.5rem;
+  display: flex; flex-direction: column; gap: 1.1rem;
+}
+.voice-item { }
+.voice-label {
+  display: inline-block; font-size: .75rem; font-weight: 500;
+  color: var(--teal-d); margin-bottom: .3rem;
+  border-left: 3px solid var(--teal); padding-left: .5rem;
+}
+.voice-item p {
+  font-size: .88rem; color: var(--mid); line-height: 1.9; margin: 0;
+}
+.voice-footer {
+  padding: .9rem 1.5rem; background: var(--sky);
+  border-top: 1px solid var(--sky-mid); text-align: right;
+}
+.voice-name {
+  font-size: .85rem; font-weight: 500; color: var(--teal-d);
+}
+
 /* テンキューデー プログラム */
 .tenq-program-list {
   display: flex; flex-direction: column; gap: 1rem;
