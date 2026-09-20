@@ -206,23 +206,54 @@
   background: var(--sky);
 }
 
-/* ギャラリー */
-.flyer-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
+/* ギャラリー／スライダー */
+.flyer-slider-wrap {
+  display: flex; align-items: center; gap: .8rem;
+}
+.flyer-slider-viewport {
+  flex: 1; overflow: hidden; border-radius: 10px;
+}
+.flyer-slider-track {
+  display: flex; gap: 0;
+  transition: transform .4s cubic-bezier(.16,1,.3,1);
 }
 .flyer-item {
-  border-radius: 10px; overflow: hidden;
-  box-shadow: 0 4px 16px rgba(58,159,212,.12);
+  min-width: calc(33.333% - 0px);
+  padding: 0 .5rem;
+  box-sizing: border-box;
   cursor: pointer; transition: transform .3s, box-shadow .3s;
   aspect-ratio: 3/4;
+  flex-shrink: 0;
 }
-.flyer-item:hover {
+.flyer-item > img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(58,159,212,.12);
+  transition: transform .3s, box-shadow .3s;
+}
+.flyer-item:hover > img {
   transform: translateY(-4px);
   box-shadow: 0 10px 28px rgba(58,159,212,.2);
 }
-.flyer-item img {
-  width: 100%; height: 100%; object-fit: cover; display: block;
+.slider-btn {
+  flex-shrink: 0; width: 38px; height: 38px; border-radius: 50%;
+  background: var(--white); border: 1.5px solid var(--sky-mid);
+  color: var(--teal); cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 2px 8px rgba(58,159,212,.12);
+  transition: background .2s, border-color .2s;
 }
+.slider-btn:hover:not(:disabled) { background: var(--sky); border-color: var(--teal); }
+.slider-btn:disabled { opacity: .3; cursor: default; }
+.slider-dots {
+  display: flex; justify-content: center; gap: .5rem; margin-top: 1rem;
+}
+.slider-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--sky-mid); border: none; cursor: pointer;
+  transition: background .2s, transform .2s;
+}
+.slider-dot.active { background: var(--teal); transform: scale(1.3); }
 
 /* ライトボックス */
 .lightbox {
@@ -255,4 +286,5 @@
   .flyer-grid { grid-template-columns: repeat(2, 1fr); }
   .next-session-body { grid-template-columns: 1fr; }
   .next-session-flyer { max-width: 260px; margin: 0 auto; }
+  .flyer-item { min-width: 100% !important; }
 }
