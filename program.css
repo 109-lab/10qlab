@@ -126,6 +126,20 @@
   box-shadow: 0 8px 28px rgba(58,159,212,.4);
 }
 
+/* Coming Soon */
+.coming-soon-box {
+  border: 2px dashed var(--sky-mid); border-radius: 16px;
+  padding: 3rem 2rem; text-align: center;
+  background: var(--sky);
+}
+.coming-soon-text {
+  font-family: var(--font-serif); font-size: 2rem; font-weight: 600;
+  color: var(--teal); letter-spacing: .15em; margin-bottom: .6rem;
+}
+.coming-soon-sub {
+  font-size: .9rem; color: var(--light);
+}
+
 /* 次回開催案内 */
 .next-session-card {
   border: 2px solid var(--teal);
