@@ -1,0 +1,202 @@
+/* ===== 参加者の声ページ ===== */
+
+.voices-page { padding-top: 68px; }
+
+/* ヒーロー */
+.voices-hero {
+  background: linear-gradient(160deg, var(--sky) 0%, #ddf0f8 40%, var(--mint) 100%);
+  padding: 4rem 2.5rem 5rem;
+  position: relative; overflow: hidden;
+}
+.voices-hero::after {
+  content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 60px;
+  background: var(--white);
+  clip-path: ellipse(55% 100% at 50% 100%);
+}
+.voices-hero-inner { max-width: 760px; margin: 0 auto; }
+.voices-tag {
+  display: inline-block; font-size: .72rem; letter-spacing: .18em;
+  color: var(--teal); margin-bottom: .8rem;
+  border-bottom: 1.5px solid var(--teal); padding-bottom: .2rem;
+}
+.voices-hero h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 600; color: var(--ink); line-height: 1.25;
+  margin-bottom: 1rem;
+}
+.voices-lead {
+  font-size: .95rem; color: var(--mid); line-height: 1.9;
+}
+
+/* コンテンツ */
+.voices-content { background: var(--white); padding: 4rem 2.5rem 6rem; }
+.voices-inner { max-width: 760px; margin: 0 auto; }
+
+/* ストーリーカード */
+.story-card {
+  background: var(--white);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(58,159,212,.1);
+  border: 1px solid var(--sky-mid);
+}
+
+/* キービジュアル */
+.story-kv {
+  background: linear-gradient(135deg, var(--teal) 0%, var(--teal-d) 60%, #1e6a9a 100%);
+  padding: 3rem 2.5rem;
+  position: relative; overflow: hidden;
+}
+.story-kv::before {
+  content: '"';
+  position: absolute; top: -1rem; right: 2rem;
+  font-size: 12rem; font-family: Georgia, serif;
+  color: rgba(255,255,255,.07); line-height: 1;
+  pointer-events: none;
+}
+.story-num {
+  display: inline-block; font-size: .72rem; letter-spacing: .18em;
+  color: rgba(255,255,255,.7); margin-bottom: 1rem;
+  border: 1px solid rgba(255,255,255,.3); padding: .2rem .8rem; border-radius: 99px;
+}
+.story-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.3rem, 3.5vw, 1.9rem);
+  font-weight: 600; color: var(--white); line-height: 1.5;
+  margin: 0;
+}
+
+/* プロフィール */
+.story-profile {
+  background: var(--sky); border-bottom: 1px solid var(--sky-mid);
+  padding: 1.5rem 2.5rem;
+}
+.story-profile-inner {
+  display: flex; align-items: center; gap: 1.2rem; flex-wrap: wrap;
+}
+.profile-avatar {
+  width: 48px; height: 48px; border-radius: 50%;
+  background: var(--teal); color: var(--white);
+  font-family: var(--font-serif); font-size: 1.3rem; font-weight: 600;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.profile-name {
+  font-family: var(--font-serif); font-size: 1rem; font-weight: 600;
+  color: var(--ink); margin-bottom: .1rem;
+}
+.profile-role { font-size: .8rem; color: var(--mid); }
+.story-theme-badge {
+  margin-left: auto;
+  background: var(--white); border: 1px solid var(--sky-mid);
+  border-radius: 12px; padding: .7rem 1.1rem;
+  max-width: 280px;
+}
+.theme-label {
+  font-size: .68rem; letter-spacing: .1em; color: var(--teal);
+  display: block; margin-bottom: .3rem;
+}
+.theme-text {
+  font-size: .85rem; font-weight: 500; color: var(--ink);
+  line-height: 1.5; margin: 0;
+}
+
+/* 本文 */
+.story-body { padding: 2.5rem; }
+
+.story-section { margin-bottom: 2.2rem; }
+.story-section h3 {
+  font-family: var(--font-serif); font-size: 1rem; font-weight: 600;
+  color: var(--ink); margin-bottom: 1rem;
+  display: flex; align-items: center; gap: .7rem;
+}
+.story-step {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 28px; height: 28px; border-radius: 50%;
+  background: var(--teal); color: var(--white);
+  font-size: .7rem; font-weight: 600; letter-spacing: .05em;
+  flex-shrink: 0;
+}
+.story-section p {
+  font-size: .9rem; color: var(--mid); line-height: 2.1;
+  margin-bottom: .8rem;
+}
+
+/* 引用 */
+.story-quote {
+  margin: 2rem 0;
+  padding: 1.8rem 2rem;
+  background: linear-gradient(135deg, #f0f8ff 0%, #e8f4fd 100%);
+  border-left: 4px solid var(--teal);
+  border-radius: 0 14px 14px 0;
+  font-family: var(--font-serif);
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: 600; color: var(--ink);
+  line-height: 1.8;
+}
+
+/* 結果ボックス */
+.story-result {
+  background: var(--teal); border-radius: 14px;
+  padding: 1.4rem 1.8rem; margin: 2rem 0;
+}
+.result-label {
+  font-size: .72rem; letter-spacing: .12em; color: rgba(255,255,255,.8);
+  display: block; margin-bottom: .5rem;
+}
+.story-result p {
+  font-family: var(--font-serif); font-size: 1rem; font-weight: 600;
+  color: var(--white); line-height: 1.8; margin: 0;
+}
+
+/* CTA */
+.story-cta {
+  background: var(--sky); border-top: 1px solid var(--sky-mid);
+  padding: 2.5rem; text-align: center;
+}
+.story-cta > p {
+  font-family: var(--font-serif); font-size: 1rem; color: var(--ink);
+  margin-bottom: 1.5rem; font-weight: 600;
+}
+.story-cta-main {
+  display: inline-block;
+  background: var(--teal); color: var(--white);
+  font-size: .9rem; font-weight: 500; letter-spacing: .08em;
+  padding: .9rem 2.5rem; border-radius: 99px;
+  box-shadow: 0 4px 20px rgba(58,159,212,.3);
+  transition: background .2s, transform .2s;
+  margin: .4rem;
+}
+.story-cta-main:hover { background: var(--teal-d); transform: translateY(-2px); }
+.story-cta-sub {
+  display: inline-block;
+  background: var(--white); color: var(--teal);
+  border: 1.5px solid var(--teal);
+  font-size: .88rem; font-weight: 500; letter-spacing: .06em;
+  padding: .85rem 2rem; border-radius: 99px;
+  transition: background .2s, color .2s, transform .2s;
+  margin: .4rem;
+}
+.story-cta-sub:hover { background: var(--teal); color: var(--white); transform: translateY(-2px); }
+
+/* program-support.html のリンクボタン */
+.voice-link-btn {
+  display: inline-block; margin-top: 1rem;
+  color: var(--teal); font-size: .9rem; font-weight: 500;
+  border-bottom: 1.5px solid var(--teal); padding-bottom: .1rem;
+  transition: opacity .2s;
+}
+.voice-link-btn:hover { opacity: .7; }
+
+@media (max-width: 600px) {
+  .voices-hero { padding: 3rem 1.5rem 4rem; }
+  .voices-content { padding: 3rem 1.5rem 4rem; }
+  .story-kv { padding: 2rem 1.5rem; }
+  .story-profile { padding: 1.2rem 1.5rem; }
+  .story-profile-inner { flex-direction: column; align-items: flex-start; }
+  .story-theme-badge { margin-left: 0; max-width: 100%; width: 100%; }
+  .story-body { padding: 1.8rem 1.5rem; }
+  .story-cta { padding: 2rem 1.5rem; }
+  .story-cta-main, .story-cta-sub { display: block; margin: .4rem 0; }
+}
