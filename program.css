@@ -126,6 +126,25 @@
   box-shadow: 0 8px 28px rgba(58,159,212,.4);
 }
 
+/* テンキューデー プログラム */
+.tenq-program-list {
+  display: flex; flex-direction: column; gap: 1rem;
+}
+.tenq-program-item {
+  display: flex; gap: 1.2rem; align-items: flex-start;
+  background: var(--sky); border-radius: 14px; padding: 1.3rem 1.5rem;
+}
+.tenq-icon {
+  font-size: 1.6rem; flex-shrink: 0; line-height: 1;
+}
+.tenq-program-item h3 {
+  font-family: var(--font-serif); font-size: 1rem; font-weight: 600;
+  color: var(--teal-d); margin-bottom: .4rem;
+}
+.tenq-program-item p {
+  font-size: .88rem; color: var(--mid); line-height: 1.9; margin: 0;
+}
+
 /* Coming Soon */
 .coming-soon-box {
   border: 2px dashed var(--sky-mid); border-radius: 16px;
