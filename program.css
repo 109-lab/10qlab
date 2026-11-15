@@ -410,6 +410,24 @@
 }
 .lightbox-close:hover { background: var(--sky); }
 
+/* 共有会 当日の流れ */
+.sharing-flow { display: flex; flex-direction: column; gap: .6rem; margin-top: .5rem; }
+.sharing-step {
+  display: flex; align-items: flex-start; gap: 1rem;
+  background: var(--sky); border-radius: 10px; padding: .8rem 1.2rem;
+}
+.sharing-step-highlight { background: rgba(90,180,172,.1); border-left: 3px solid var(--teal); }
+.sharing-step-num {
+  flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%;
+  background: var(--teal); color: var(--white);
+  font-size: .8rem; font-weight: 600;
+  display: flex; align-items: center; justify-content: center;
+}
+.sharing-step-body { flex: 1; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 .6rem; }
+.sharing-step-title { font-size: .92rem; font-weight: 500; color: var(--ink); }
+.sharing-step-time { font-size: .8rem; color: var(--mid); }
+.sharing-step-note { width: 100%; font-size: .78rem; color: var(--teal-d); margin-top: .3rem; line-height: 1.6; }
+
 @media (max-width: 600px) {
   .prog-hero { padding: 3rem 1.5rem 4rem; }
   .prog-content { padding: 3rem 1.5rem 4rem; }
