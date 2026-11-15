@@ -293,13 +293,12 @@
 }
 .next-session-body {
   padding: 1.8rem 2rem;
+}
+.next-session-top {
   display: grid;
   grid-template-columns: 1fr 220px;
   gap: 2rem;
-  align-items: start;
-}
-.next-session-left {
-  min-width: 0;
+  align-items: end;
 }
 .next-session-flyer {
   border-radius: 10px; overflow: hidden;
