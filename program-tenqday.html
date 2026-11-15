@@ -135,6 +135,13 @@
     </div>
   </main>
 
+  <script>
+    document.querySelectorAll('img').forEach(img => {
+      img.addEventListener('contextmenu', e => e.preventDefault());
+      img.addEventListener('dragstart', e => e.preventDefault());
+    });
+  </script>
+
   <footer class="footer">
     <div class="footer-inner">
       <a href="index.html" class="footer-logo">10Q.LAB</a>
