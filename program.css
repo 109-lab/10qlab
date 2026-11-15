@@ -204,10 +204,10 @@
   flex-wrap: wrap;
 }
 .tenq-photo-note {
-  display: inline-flex;
+  display: flex;
   align-items: flex-start;
   gap: .4rem;
-  margin-top: 1.2rem;
+  margin-top: 1.4rem;
   font-size: .8rem;
   color: var(--teal-d);
   line-height: 1.9;
