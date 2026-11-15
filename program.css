@@ -275,21 +275,21 @@
   background: var(--white);
 }
 .next-session-header {
-  background: linear-gradient(135deg, var(--teal) 0%, var(--teal-d) 100%);
+  background: var(--sky);
   padding: 1.8rem 2rem;
   text-align: center;
 }
 .next-session-num {
   display: inline-block; font-size: .78rem; letter-spacing: .12em;
-  color: rgba(255,255,255,.85); margin-bottom: .6rem;
-  background: rgba(255,255,255,.15); padding: .2rem .9rem; border-radius: 99px;
+  color: var(--teal-d); margin-bottom: .6rem;
+  background: rgba(0,0,0,.06); padding: .2rem .9rem; border-radius: 99px;
 }
 .next-session-title {
   font-family: var(--font-serif); font-size: clamp(1.3rem, 3vw, 1.8rem);
-  font-weight: 600; color: var(--white); line-height: 1.4; margin: .4rem 0 .3rem;
+  font-weight: 600; color: var(--ink); line-height: 1.4; margin: .4rem 0 .3rem;
 }
 .next-session-sub {
-  font-size: .88rem; color: rgba(255,255,255,.85);
+  font-size: .88rem; color: var(--mid);
 }
 .next-session-body {
   padding: 1.8rem 2rem;
