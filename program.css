@@ -211,6 +211,35 @@
   align-self: center;
 }
 
+/* 10Q.DAY レポート */
+.tenqday-report-lead {
+  font-size: .92rem; color: var(--mid); line-height: 1.9; margin-bottom: 1rem;
+}
+.tenqday-rating {
+  font-size: .9rem; color: var(--mid); margin-bottom: 1.5rem;
+}
+.tenqday-rating span {
+  color: #f5a623; font-size: 1rem;
+}
+.tenqday-voices {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+}
+@media (max-width: 600px) {
+  .tenqday-voices { grid-template-columns: 1fr; }
+}
+.tenqday-voice {
+  background: var(--white); border-left: 3px solid var(--teal);
+  border-radius: 0 10px 10px 0; padding: 1rem 1.2rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,.06);
+}
+.tenqday-voice-title {
+  font-size: .85rem; font-weight: 600; color: var(--teal-d);
+  margin-bottom: .5rem !important;
+}
+.tenqday-voice p:last-child {
+  font-size: .85rem; color: var(--mid); line-height: 1.85; margin: 0;
+}
+
 /* Coming Soon */
 .coming-soon-box {
   border: 2px dashed var(--sky-mid); border-radius: 16px;
