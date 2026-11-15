@@ -189,8 +189,8 @@
   flex-wrap: wrap;
 }
 .tenq-photos img {
-  width: 120px !important;
-  height: 90px !important;
+  width: 180px !important;
+  height: 135px !important;
   border-radius: 8px;
   object-fit: cover;
   flex-shrink: 0;
