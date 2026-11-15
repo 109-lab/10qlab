@@ -196,19 +196,30 @@
   flex-shrink: 0;
 }
 .tenq-photos-row {
+  margin-top: 1rem;
+}
+.tenq-photos {
   display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  margin-top: .9rem;
+  gap: .5rem;
   flex-wrap: wrap;
 }
 .tenq-photo-note {
-  font-size: .82rem;
-  color: var(--mid);
-  line-height: 1.8;
-  max-width: 200px;
-  margin: 0;
-  align-self: center;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: .4rem;
+  margin-top: .7rem;
+  font-size: .8rem;
+  color: var(--teal-d);
+  line-height: 1.75;
+  background: rgba(255,255,255,.7);
+  border-radius: 8px;
+  padding: .5rem .8rem;
+}
+.tenq-photo-note::before {
+  content: "📝";
+  font-size: .85rem;
+  flex-shrink: 0;
+  margin-top: .05rem;
 }
 
 /* 10Q.DAY レポート */
