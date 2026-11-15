@@ -216,7 +216,7 @@
   border-radius: 8px;
   padding: .6rem 1rem;
   width: fit-content;
-  max-width: 300px;
+  max-width: 420px;
 }
 .tenq-photo-note::before {
   content: "📝";
