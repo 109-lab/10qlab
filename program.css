@@ -202,6 +202,7 @@
   display: flex;
   gap: .5rem;
   flex-wrap: wrap;
+  margin-bottom: 1.2rem;
 }
 .tenq-photo-note {
   display: flex;
@@ -214,9 +215,8 @@
   background: rgba(255,255,255,.7);
   border-radius: 8px;
   padding: .6rem 1rem;
-  width: 380px;
-  max-width: 100%;
-  box-sizing: border-box;
+  width: fit-content;
+  max-width: 300px;
 }
 .tenq-photo-note::before {
   content: "📝";
