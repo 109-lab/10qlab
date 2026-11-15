@@ -195,6 +195,21 @@
   object-fit: cover;
   flex-shrink: 0;
 }
+.tenq-photos-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: .9rem;
+  flex-wrap: wrap;
+}
+.tenq-photo-note {
+  font-size: .82rem;
+  color: var(--mid);
+  line-height: 1.8;
+  max-width: 200px;
+  margin: 0;
+  align-self: center;
+}
 
 /* Coming Soon */
 .coming-soon-box {
